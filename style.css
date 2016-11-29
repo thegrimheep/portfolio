@@ -1,0 +1,34 @@
+html {
+  background-color: #FEF9E7;
+}
+
+@media all and (min-width: 640px) {
+  .pagehead {
+    padding: .2em .2em .2em .2em;
+  }
+}
+
+.profile-header {
+  background-color: #FCF3CF;
+  float: right;
+}
+.twit-logo {
+  height: 20px;
+  width: 20px;
+}
+
+.link-logo {
+  height: 20px;
+  width: 20px;
+}
+
+.gitHub-logo {
+  height: 20px;
+  width: 20px;
+}
+
+
+.mypic {
+  height: 50px;
+  width: 50px;
+}
