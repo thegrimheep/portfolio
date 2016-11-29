@@ -2,6 +2,12 @@ html {
   background-color: #FEF9E7;
 }
 
+@media all and (min-width: 640px) {
+  .pagehead {
+    padding: .2em .2em .2em .2em;
+  }
+}
+
 .profile-header {
   background-color: #FCF3CF;
   float: right;
@@ -16,7 +22,10 @@ html {
   width: 20px;
 }
 
-
+.gitHub-logo {
+  height: 20px;
+  width: 20px;
+}
 
 
 .mypic {
