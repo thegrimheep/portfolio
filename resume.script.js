@@ -1,12 +1,5 @@
 'use strict';
 
-// $(document).ready(function(){
-//   $('#menu').click(function(){
-//     $(this).toggleClass('open');
-//   });
-// });
-
-
 var resume = [
   {
     jobTitle: 'Prodject Coordinator',
