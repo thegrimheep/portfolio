@@ -1,23 +1,39 @@
 'use strict';
 
-// $(document).ready(function(){
-//   $('#menu').click(function(){
-//     $(this).toggleClass('open');
-//   });
-// });
-
-
-var empHist = [
+var resume = [
   {
+    jobTitle: 'Prodject Coordinator',
     empName: 'Invitation Homes',
     empLoc: 'Bellevue, WA',
-    jobTitle: 'Prodject Coordinator'
+    dateEmp: 'August, 2015 to November, 2016',
     respon: '<p>Direct point of contact for residents with maintenance requests.  Enter data to create maintenance work orders based on resident requests.  Dispatch the work orders to maintenance technicians or assign them to a 3rd party vendors. Manage work orders that are assigned to vendors.  Assist leasing specialists with scheduling home turns for new residents.</p>'
   },
   {
-    empName: 'Safelite Autoglass'
-    empLoc: 'Seattle, WA'
-    jobTitle: 'Scheduling Manager'
+    jobTitle: 'Scheduling Manager',
+    empName: 'Safelite Autoglass',
+    empLoc: 'Seattle, WA',
+    dateEmp: 'October, 2013 to August, 2015',
     respon: '<p>Take scheduled work order and dispatch those to the 75 technicians.  Provide customer service face to face for customers in the store.  Answer the phones from potential new customers.  Managed glass inventory. Prepared the schedule for the market.  Analyzed market trends to determine the proper amount of hours to schedule.</p>'
-  }
-]
+  },
+  {
+    jobTitle: 'Fleet Manager',
+    empName: 'US Xpress Enterprises',
+    empLoc: 'Chattanooga, TN',
+    dateEmp: 'January, 2010 to May, 2013',
+    respon: '<p>Managed a fleet of up to 60 trucks while being accountable for the operations, profitability and driver retention of that fleet.  Handled all day to day driver concerns which included payroll issues, home time, requests random drug testing and on time delivery of freight.</p>'
+  },
+  {
+    jobTitle: 'Customer Account Lead',
+    empName: 'American Honda Finance Corporation',
+    empLoc: 'Roswell, GA',
+    dateEmp: 'February, 2005 to February, 2009',
+    respon: '<p>Managed a team of 15 or more representatives that contacted delinquent customers to bring accounts current while maintaining the highest level of customer service; preformed call monitoring and side by side coaching to insure call quality.  Maintained a queue of accounts 90-120 days past due which included bringing account current with payment or repossessing the vehicle.</p>'
+  },
+  {
+    jobTitle: 'Collection Specialists',
+    empName: 'Citi Cards',
+    empLoc: 'Gray, TN',
+    dateEmp: 'June, 2003 to February, 2005',
+    respon: '<p>Responsible for incoming and outgoing calls; assisting customers with payment options, billing questions, and promotional questions; make decisions on delinquent accounts for payment schedules; assist customers in keeping their accounts current to prevent write-offs.</p>'
+  },
+];
