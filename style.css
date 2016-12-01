@@ -27,45 +27,55 @@ html {
   width: 20px;
 }
 
+.home-logo {
+  height: 20px;
+  width: 20px;
+}
+
+.aboutMe-logo {
+  height: 20px;
+  width: 20px;
+}
 
 .mypic {
   height: 50px;
   width: 50px;
 }
 
-#menu span:nth-child(1) {
+
+.menu span:nth-child(1) {
   top: 0px;
 }
 
-#menu span:nth-child(2),#menu span:nth-child(3) {
+.menu span:nth-child(2),.menu span:nth-child(3) {
   top: 18px;
 }
 
-#menu span:nth-child(4) {
+.menu span:nth-child(4) {
   top: 36px;
 }
 
-#menu.open span:nth-child(1) {
+.menu.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-#menu.open span:nth-child(2) {
+.menu.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#menu.open span:nth-child(3) {
+.menu.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#menu.open span:nth-child(4) {
+.menu.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
