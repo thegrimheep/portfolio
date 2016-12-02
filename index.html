@@ -3,8 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>David Porter</title>
+  <!-- <script id="neighborhood-template" type="text/x-handlebars-template">
+    <h2>{{name}}</h2>
+    <p>City of {{city}}</p>
+    <p>Population of {{population}}</p>
+  </script>
+ -->
+  </script>
 </head>
 <body>
   <section class="pagehead">
@@ -40,6 +47,11 @@
         <article class="listJobs" data-category="cat">
           <h1>Employment History:</h1>
           <div class="resume">
+            <h4 class=".jobTitle"></h4>
+            <h4 class=".empName"></h4>
+            <h4 class=".empLoc"></h4>
+            <h4 class=".dateEmp"></h4>
+            <p class=".respon"></p>
           </div>
         </article>
       </section>
@@ -47,6 +59,8 @@
     <footer>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="resume.script.js"></script>
+    <script text="text/javascript" src="scripts/resume.script.js"></script>
+    <script type="text/javascript" src="scripts/listResume.script.js"></script>
+    <script text="text/javascript" src="scripts/menu.script.js"></script>
   </body>
   </html>

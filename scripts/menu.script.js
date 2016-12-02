@@ -9,14 +9,7 @@ $('.hamburger').click(function() {
   });
 });
 
-// $('.cross').click(function() {
-//   $('.menu').slideToggle( 'slow', function() {
-//     $('.cross').hide();
-//     $('.hamburger').show();
-//   });
-// });
-
-$('li').click(function() {
+$('.cross').click(function() {
   $('.menu').slideToggle( 'slow', function() {
     $('.cross').hide();
     $('.hamburger').show();
