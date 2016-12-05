@@ -11,12 +11,13 @@ function JobResume(jobs) {
 };
 
 JobResume.prototype.toHtml = function() {
-  var $newJobResume = $('jobHistories.listJobs').clone();
-  $newJobResume.find('jobTitle').html(this.jobTitle);
-  $newJobResume.find('empName').html(this.empName);
-  $newJobResume.find('empLoc').html(this.empLoc);
-  $newJobResume.find('dateEmp').html(this.dateEmp);
-  $newJobResume.find('respon').html(this.respon);
+  var $newJobResume = $('article.listJobs').clone();
+  $newJobResume.find('.jobTitle').html(this.jobTitle);
+  $newJobResume.find('.empName').html(this.empName);
+  $newJobResume.find('.empLoc').html(this.empLoc);
+  $newJobResume.find('.dateEmp').html(this.dateEmp);
+  $newJobResume.find('.respon').html(this.respon);
+  $newJobResume.removeClass('listJobs');
   return $newJobResume;
 };
 
