@@ -1,5 +1,10 @@
 html {
-  background-color: #FEF9E7;
+  /*background-color: #FEF9E7;*/
+  background-color: #32b0ef;
+}
+
+.myface {
+  display: inline-flex;
 }
 
 @media all and (min-width: 640px) {
@@ -38,8 +43,8 @@ html {
 }
 
 .mypic {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
 }
 
 body {
@@ -52,7 +57,7 @@ body {
 
 header {
 	width: 100%;
-	background: #1d1f20;
+	background: #55b7e8;
 	height: 60px;
 	line-height: 60px;
 }
@@ -87,20 +92,21 @@ header {
   z-index: 10000000000000;
 }
 .menu {
-  z-index: 1000000;
+  display: inline-block;
+  z-index: 4;
   font-weight: bold;
   font-size: 0.8em;
   width: 100%;
   background: #131313;
-  position: inline;
+  position: relative;
   float: right;
   text-align: center;
 }
 .menu ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  list-style-image: none;
+  list-style-type: inherit;
+  list-style-image: inherit;
 }
 .menu li {
   display: block;
@@ -114,21 +120,21 @@ header {
   border-bottom: #1d1f20 1px solid;
 }
 .menu ul li a {
-  text-decoration: none;
+  text-decoration: underline;
   margin: 0px;
   color:#fff;
 }
 .menu ul li a:hover {
   color: #fff;
-  text-decoration: none;
+  text-decoration: inherit;
 }
 
 .menu a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 .menu a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 
