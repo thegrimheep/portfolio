@@ -3,22 +3,15 @@
 var jobHistories = [];
 
 function JobResume(jobs) {
-  this.jobTitle = jobs.jobTitle;
-  this.empName = jobs.empName;
-  this.empLoc = jobs.empLoc;
-  this.dateEmp = jobs.dateEmp;
-  this.respon = jobs.respon;
+  for (var key in jobs) {
+    this[key] = jobs[key];
+  }
 };
 
-JobResume.prototype.toHtml = function() {
-  var $newJobResume = $('article.listJobs').clone();
-  $newJobResume.find('.jobTitle').html(this.jobTitle);
-  $newJobResume.find('.empName').html(this.empName);
-  $newJobResume.find('.empLoc').html(this.empLoc);
-  $newJobResume.find('.dateEmp').html(this.dateEmp);
-  $newJobResume.find('.respon').html(this.respon);
-  $newJobResume.removeClass('listJobs');
-  return $newJobResume;
+JobResume.prototype.toHtml = function () {
+  var $source = $('#resume-template').html();
+  var templateRender = Handlebars.compile($source);
+  return templateRender(this);
 };
 
 resume.forEach(function(jobResumeObj) {
