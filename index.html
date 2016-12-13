@@ -4,14 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="vendor/ham.style.css">
+
   <title>David Porter</title>
-  <!-- <script id="neighborhood-template" type="text/x-handlebars-template">
-    <h2>{{name}}</h2>
-    <p>City of {{city}}</p>
-    <p>Population of {{population}}</p>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script id="resume-template" type="text/x-handlebars-template">
+    <h4>Title: {{jobTitle}}</h4>
+    <h4>Employer:  {{empName}}</h4>
+    <h4>Location:  {{empLoc}}</h4>
+    <h4>Dates Employed:  {{dateEmp}}</h4>
+    <p>Job Duties:  {{{respon}}}</p>
   </script>
- -->
-  </script>
+
 </head>
 <body>
   <section class="pagehead">
@@ -24,15 +28,15 @@
     <div class="menu">
       <button class="hamburger">&#9776;</button>
       <button class="cross">&#735;</button>
-    </header>
       <ul>
-        <li><a href="#"><img src="images/HomeLogo.png" alt="Home" class="home-logo"></a></li>
-        <li><a href="#"><img src="images/AboutMe.png" alt="About Me" class="aboutMe-logo"></a></li>
-        <li><a href="https://twitter.com/TheGrimHEEP"><img src="images/Twitter-logo.jpg" alt="Twitter Profile" class="twit-logo"></a></li>
-        <li><a href="https://www.linkedin.com/in/david-porter-9584129?trk=hp-identity-photo"><img src="images/LinkedIn-logo.png" alt="LinkedIn" class="linkedIn-logo"></a></li>
-        <li><a href="https://github.com/thegrimheep"><img src="images/GitHub-logo.png" alt="GitHub" class="gitHub-logo"></a></li>
+        <li><a href="/home"><img src="images/HomeLogo.png" alt="Home" class="home-logo">  Home</a></li>
+        <li><a href="/about"><img src="images/AboutMe.png" alt="About Me" class="aboutMe-logo">  About Me</a></li>
+        <li><a href="https://twitter.com/TheGrimHEEP"><img src="images/Twitter-logo.jpg" alt="Twitter Profile" class="twit-logo">  Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/david-porter-9584129?trk=hp-identity-photo"><img src="images/LinkedIn-logo.png" alt="LinkedIn" class="linkedIn-logo">  LinkedIn</a></li>
+        <li><a href="https://github.com/thegrimheep"><img src="images/GitHub-logo.png" alt="GitHub" class="gitHub-logo">  GitHub</a></li>
       </ul>
     </div>
+  </header>
     <div class="profile-header">
     </div>
   <main>
@@ -42,7 +46,7 @@
       Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
 
       <!-- end slipsum code --></p>
-<h1>Employment History</h1>
+<h2 =id="showjobs">Employment History</h2>
       <section id="jobHistories">
         <article class="listJobs" data-category="cat">
           <div class="resume">
@@ -58,8 +62,10 @@
     <footer>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script text="text/javascript" src="scripts/resume.script.js"></script>
     <script type="text/javascript" src="scripts/listResume.script.js"></script>
-    <script text="text/javascript" src="scripts/menu.script.js"></script>
+    <script text="text/javascript" src="vendor/menu.script.js"></script>
+    <script type="text/javascript" src="scripts/page.js"></script>
   </body>
   </html>
