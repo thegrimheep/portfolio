@@ -2,20 +2,14 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "David Porter's Portfolio.",
-  "main": "web.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
   "author": "david-porter",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.9.8"
-  },
-  "engines": {
-    "node": "4.1.1"
+    "express": "^4.13.3",
+    "express-request-proxy": "^2.0.0"
   }
 }
