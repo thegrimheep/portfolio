@@ -29,16 +29,16 @@
       <button class="hamburger">&#9776;</button>
       <button class="cross">&#735;</button>
       <ul>
-        <li><a href="/home"><img src="images/HomeLogo.png" alt="Home" class="home-logo">  Home</a></li>
-        <li><a href="/about"><img src="images/AboutMe.png" alt="About Me" class="aboutMe-logo">  About Me</a></li>
-        <li><a href="https://twitter.com/TheGrimHEEP"><img src="images/Twitter-logo.jpg" alt="Twitter Profile" class="twit-logo">  Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/david-porter-9584129?trk=hp-identity-photo"><img src="images/LinkedIn-logo.png" alt="LinkedIn" class="linkedIn-logo">  LinkedIn</a></li>
-        <li><a href="https://github.com/thegrimheep"><img src="images/GitHub-logo.png" alt="GitHub" class="gitHub-logo">  GitHub</a></li>
+        <a href="/home"><li><img src="images/HomeLogo.png" alt="Home" class="home-logo">  Home</li></a>
+        <a href="/about"><li><img src="images/AboutMe.png" alt="About Me" class="aboutMe-logo">  About Me</li></a>
+        <a href="https://twitter.com/TheGrimHEEP"><li><img src="images/Twitter-logo.jpg" alt="Twitter Profile" class="twit-logo">  Twitter</li></a>
+        <a href="https://www.linkedin.com/in/david-porter-9584129?trk=hp-identity-photo"><li><img src="images/LinkedIn-logo.png" alt="LinkedIn" class="linkedIn-logo">  LinkedIn</li></a>
+        <a href="https://github.com/thegrimheep"><li><img src="images/GitHub-logo.png" alt="GitHub" class="gitHub-logo">  GitHub</li></a>
       </ul>
     </div>
   </header>
-    <div class="profile-header">
-    </div>
+  <div class="profile-header">
+  </div>
   <main>
     <h3>About Me</h3>
     <p><!-- start slipsum code -->
@@ -46,7 +46,9 @@
       Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
 
       <!-- end slipsum code --></p>
-<h2 =id="showjobs">Employment History</h2>
+
+      <!-- TODO: Add a section here to make only the first couple of jobs viewable.  Then add a link to it. -->
+      <h2 =id="showjobs">Employment History</h2>
       <section id="jobHistories">
         <article class="listJobs" data-category="cat">
           <div class="resume">
@@ -60,12 +62,13 @@
       </section>
     </main>
     <footer>
+      &copy; 2016 David Porter | Web/iOS Developer | Seattle, WA
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script text="text/javascript" src="scripts/resume.script.js"></script>
-    <script type="text/javascript" src="scripts/listResume.script.js"></script>
-    <script text="text/javascript" src="vendor/menu.script.js"></script>
-    <script type="text/javascript" src="scripts/page.js"></script>
+    <script src="scripts/page.js"></script>
+    <script src="scripts/Controller/listResume.script.js"></script>
+    <script src="scripts/View/resumeHandle.js"></script>
+    <script src="vendor/menu.script.js"></script>
   </body>
   </html>
